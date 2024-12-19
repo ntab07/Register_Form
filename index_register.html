@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="JavaScipt Form"/>
+	<meta name="author" content="BiOne"/>
+	<meta name="Country" content="VN"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FORM JS</title>
+
+	<script src="js/register.js"></script>
+	<link rel="stylesheet" href="css/register.css">	
+</head>
+
+<body>
+    <h1>POLICE HR</h1>
+    <h2>Register Information</h2>
+</body>
+
+<form id="registerForm" method="post" action="confirm_register.html">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <p><label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"> <br/></p>
+        
+        <p><label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"> <br/></p>
+
+        <p><label for="email">Email:</label>
+        <input type="text" id="email" name="email"> <br/></p>
+            
+        <p><label for="pnum">Phone Number:</label>
+        <input type="text" id="pnum" name="pnum"> <br/></p>
+
+        <p><label for="age">Age:</label>
+        <input type="text" id="age" name="age"> <br/></p>
+        
+
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+
+        <legend>Select Your Occupation</legend>
+
+        <p><label for="f_eat">Education and Training</label>
+        <input type="radio" id="f_eat" name="occupation" value="f_eat"><br/></p>
+        
+        <p><label for="f_hr">Human Resources</label>
+        <input type="radio" id="f_hr" name="occupation" value="f_hr"><br/></p>
+
+        <p><label for="f_sd">Security Division</label>
+        <input type="radio" id="f_sd" name="occupation" value="f_sd"><br/></p>
+
+    </fieldset>    
+
+    <br/>
+
+    <fieldset>
+
+        <legend>Select Police Equipment</legend>
+
+        <p><B>UNIFROM:</B></p>
+        <p><label for="u_eat">Lecturer's Uniform</label>
+        <input type="radio" id="u_eat" name="Uniform" value="u_eat"><br/></p>
+        
+        <p><label for="u_hr">Security Staff Uniform</label>
+        <input type="radio" id="u_hr" name="Uniform" value="u_hr"><br/></p>
+
+        <p><label for="u_sd">Human Resources Department Uniform</label>
+        <input type="radio" id="u_sd" name="Uniform" value="u_sd"><br/></p>
+
+        <p><B>EQUIPMENT:</B></p>
+        <p><label for="e_plradio">Police Smart Radio</label>
+        <input type="checkbox" id="e_plradio" name="Radio" value="Selected"><br/></p>
+        
+        <p><label for="e_plhandcuffs">Police Handcuffs</label>
+        <input type="checkbox" id="e_plhandcuffs" name="Handcuffs" value="Selected"><br/></p>
+
+        <p><label for="e_pbulletproof">Police Bulletproof</label>
+        <input type="checkbox" id="e_pbulletproof" name="Bulletproof" value="Selected"><br/></p>
+
+        <p><label for="e_ppistol">Police Heavy Pistol</label>
+        <input type="checkbox" id="e_ppistol" name="Heavy Pistol" value="Selected"><br/></p>
+
+        <p><label for="e_pbadge">Police Badge</label>
+        <input type="checkbox" id="e_pbadge" name="Badge" value="Selected"><br/></p>
+
+        <p><label for="e_ptools">Police Tools</label>
+        <input type="checkbox" id="e_ptools" name="Tools" value="Selected"><br/></p>
+
+    </fieldset>     
+
+    <br/>
+
+<label for="payment">PAYMENT METHOD:</label>
+    <select name="payment" id="payment">
+        <option value="none">Please Select</option>
+        <option value="PayID">PayID</option>
+        <option value="Paypal">Paypal</option>
+        <option value="Credit Card">Credit Card</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    <input type="submit" value="Register"/>
+    <input type="reset" value="RESET"/>
+
+</form>
+
+</html>
